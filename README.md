@@ -11,7 +11,7 @@ services:
   dev-s3:
     image: localstack/localstack:s3-latest
   dev-bucket-setup:
-    image: adliih:awslocal
+    image: adliih/awslocal
     command: |
       awslocal s3 mb s3://$MEDIA_BUCKET
     depends_on:
